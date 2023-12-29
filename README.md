@@ -13,7 +13,7 @@ Usage/Features:
 -will need to make an account by clicking on the Register Here button
 -when creating an account on the Registration Form, do NOT use any real credentials you may have as this is just for testing purposes
 to show off the project
--email address requirements just need to have the following format: <anylettersornumbers>@<anylettersornumbers>.com -> i.e. justin@msn.com or abc@123.com
+-email address requirements just need to have the following format: <anylettersornumbers>@<anylettersornumbers>.com -> i.e. testing@123abc.com or abc@123.com
 -if the email address is already in your local storage, it will say you account exists and to sign in with it. use fake credentials please.
 -password requirements are just 8 or more characters
 -after that is done, you'll be able to sign in using those credentials
