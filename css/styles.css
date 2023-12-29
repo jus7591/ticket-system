@@ -1,0 +1,53 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* Global styling for the body */
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif; /* Set the default font */
+  background-color: lightgray; /* Set a light gray background color */
+}
+
+/* Styling for the footer */
+.footer {
+  position: sticky;
+  height: 25px;
+  border-top: 1px solid black;
+  background-color: lightgrey;
+  top: 100%; /* Stick to the bottom of the viewport */
+}
+
+/* Styling for the main ticket heading */
+.ticket-heading {
+  font-family: 'Oswald', 'Poppins', sans-serif; /* Set font family for the heading */
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  color: #222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr; /* Center the heading */
+  grid-template-rows: 27px 0; /* Set rows for visual separation */
+  grid-gap: 20px;
+  align-items: center;
+}
+
+/* Styling for the lines above and below the heading */
+.ticket-heading::after,
+.ticket-heading::before {
+  content: ' ';
+  display: block;
+  border-bottom: 1px solid rgb(0, 124, 184); /* Blue line below */
+  border-top: 1px solid rgb(0, 124, 184); /* Blue line above */
+  height: 5px;
+  background-color: #f8f8f8; /* Light gray background color */
+}
+
+/* Styling for the log-out link */
+.log-out {
+  display: flex;
+  flex-direction: row-reverse; /* Align log-out link to the right */
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ticket Login Page</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <div class="background">
+      <div class="container-fluid">
+        <!-- Main content row -->
+        <div class="row main-content text-center">
+          <!-- Company info column -->
+          <div class="col-md-4 text-center company__info"></div>
+          <!-- Login form column -->
+          <div class="col-md-8 col-xs-12 col-sm-12 login_form">
+            <!-- Container for login form -->
+            <div class="container-fluid">
+              <!-- Title row -->
+              <div class="row">
+                <h1>Ticket System</h1>
+              </div>
+              <!-- Login form row -->
+              <div class="row">
+                <form control="" class="form-group">
+                  <!-- Email input row -->
+                  <div class="row">
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      class="form__input"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                  <!-- Password input row -->
+                  <div class="row">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      class="form__input"
+                      placeholder="Password"
+                      required
+                    />
+                  </div>
+                  <!-- Login button row -->
+                  <div class="row">
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary login-btn"
+                      onclick="auth()"
+                    >
+                      Login
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <!-- Registration link row -->
+              <div class="row">
+                <p>Don't have an account?</p>
+                <button
+                  type="button"
+                  class="btn btn-link register-here-btn"
+                  data-toggle="modal"
+                  data-target="#registerModal"
+                >
+                  Register Here
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Registration Modal -->
+    <div class="modal fade container" id="registerModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Content In Modal -->
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h3>Registration Form</h3>
+          </div>
+          <!-- Registration form content -->
+          <div class="registerContent modal-body">
+            <form class="form-group" id="modal-form" action="#">
+              <h6 class="text-danger">
+                Do not enter real credentials into here! Credentials are not
+                stored securely and this is for testing purposes only! Example
+                credentials that could be used to log in with: abc@123.com and
+                abcd1234.
+              </h6>
+              <!-- New email input row -->
+              <div class="row">
+                <input
+                  type="text"
+                  name="email"
+                  id="newEmail"
+                  class="form__input"
+                  placeholder="Email Address"
+                  onkeydown="emailValidation()"
+                />
+                <span id="text"></span>
+              </div>
+              <!-- New password input row -->
+              <div class="row">
+                <input
+                  type="password"
+                  name="password"
+                  id="newPassword"
+                  class="form__input"
+                  placeholder="Create Password"
+                  required
+                />
+              </div>
+              <!-- Registration button row -->
+              <div class="modal-register-btn">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="register()"
+                >
+                  Register
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script references -->
+    <script src="js/login.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

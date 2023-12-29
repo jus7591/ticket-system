@@ -1,0 +1,180 @@
+/* Importing Google Font - Sanchez */
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+
+/* Styling for the main background */
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('../images/background.jpg');
+  background-size: cover;
+  background-position: center center fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Global styling for container-fluid */
+.container-fluid {
+  padding-top: 10%;
+}
+
+/* Styling for the main heading */
+h1 {
+  font-family: 'Sanchez', sans-serif; /* Set font family for the heading */
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+/* Styling for the main content */
+.main-content {
+  width: 50%;
+  border-radius: 20px;
+  border: 1px solid;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  margin: auto;
+}
+
+/* Styling for the company info */
+.company__info {
+  background-image: url('../images/computer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-color: #fff;
+  border-right: 1px dashed black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 124, 184, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button Styles */
+.login-btn {
+  /* Transition effect on hover and focus */
+  transition: all 0.5s ease;
+  width: 70%;
+  border-radius: 30px;
+  color: rgb(0, 124, 184);
+  font-weight: 600;
+  background-color: #fff;
+  border: 1px solid rgb(0, 124, 184);
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* Styling for button hover and focus */
+.login-btn:hover,
+.login-btn:focus {
+  background-color: rgb(0, 124, 184);
+  color: #fff;
+}
+
+/* Styling for the "Register Here" button */
+.register-here-btn {
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+/* Close icon styling */
+.close {
+  font-size: 30px;
+  color: white;
+}
+
+/* Styling for modal header */
+.modal-header {
+  background-color: rgb(0, 124, 184);
+}
+
+/* Styling for the registration modal */
+#registerModal h3 {
+  color: white;
+}
+
+#registerModal {
+  width: 650px;
+  height: 600px;
+  margin-top: 100px;
+}
+
+/* Styling for specific rows with h2 elements */
+.row > h2 {
+  color: rgb(0, 124, 184);
+}
+
+/* Styling for the login form */
+.login_form {
+  background-color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  width: 100%;
+}
+
+/* Styling for the form */
+form {
+  padding: 0 2em;
+}
+
+/* Styling for form input elements */
+.form__input {
+  width: 100%;
+  border: 0px solid transparent;
+  border-radius: 0;
+  border-bottom: 1px solid #aaa;
+  padding: 1em 0.5em 0.5em;
+  padding-left: 2em;
+  outline: none;
+  margin: 1.5em auto;
+  transition: all 0.5s ease;
+}
+
+/* Styling for form input focus state */
+.form__input:focus {
+  border-bottom-color: rgb(0, 124, 184);
+  box-shadow: 0 0 5px rgba(0, 124, 184, 0.4);
+  border-radius: 4px;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 640px) {
+  .main-content,
+  #registerModal {
+    width: 90%;
+  }
+  .company__info {
+    display: none;
+  }
+  .login_form,
+  #registerModal {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 992px) {
+  .main-content {
+    width: 70%;
+  }
+
+  .company__info {
+    display: none;
+  }
+
+  .login_form,
+  #registerModal {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+@media (max-width: 1422px) {
+  body {
+    background-size: cover;
+  }
+}
+/* End Of Media Queries */
