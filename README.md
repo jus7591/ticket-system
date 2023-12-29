@@ -1,4 +1,3 @@
-<!--
 Project Name: Ticket System
 
 Hello! This project is my interpretation on what a ticketing system would function like. You would be able to use this by creating
@@ -26,4 +25,4 @@ doing that first.
 -you can continue to use your credentials to log back in as it is still saved to the localstorage as an object
 
 Thank you!
---->
+
