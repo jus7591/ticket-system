@@ -41,6 +41,7 @@
                       id="email"
                       class="form__input"
                       placeholder="Email Address"
+                      onkeypress="checkEnter(event)"
                       required
                     />
                   </div>
@@ -52,6 +53,7 @@
                       id="password"
                       class="form__input"
                       placeholder="Password"
+                      onkeypress="checkEnter(event)"
                       required
                     />
                   </div>
@@ -113,6 +115,7 @@
                   class="form__input"
                   placeholder="Email Address"
                   onkeydown="emailValidation()"
+                  onkeypress="checkEnterRegister(event)"
                 />
                 <span id="text"></span>
               </div>
@@ -124,6 +127,7 @@
                   id="newPassword"
                   class="form__input"
                   placeholder="Create Password"
+                  onkeypress="checkEnterRegister(event)"
                   required
                 />
               </div>

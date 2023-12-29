@@ -1,3 +1,9 @@
+function checkEnter(e) {
+  if (e.keyCode === 13) {
+    auth();
+  }
+}
+
 // Auth function runs every time the login button is clicked. Confirms the email and password match with the credentials in the local storage.
 function auth() {
   // Retrieve email and password from the input fields
@@ -21,6 +27,11 @@ function auth() {
   }
 }
 
+function checkEnterRegister(e) {
+  if (e.keyCode === 13) {
+    register();
+  }
+}
 /*
   This register function gets all of the values in the form and tests them to see if the credentials are valid before
   storing them into the local storage to be used for login.
