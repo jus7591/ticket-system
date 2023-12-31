@@ -15,7 +15,7 @@ function saveIssue(e) {
   // Ensure description and assigned to fields are not empty
   if (issueDesc === '' || issueAssignedTo === '') {
     alert(
-      'Error: Please enter in a description for your issue and a case owner to create a case.'
+      'Error: Please enter in a description for your issue and the name of someone to monitor to create a ticket.'
     );
     return;
   }
